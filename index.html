@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stickers CF</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>🎨 Mis Medallas en CódigoFacilito</h1>
+
+  <div class="controls">
+    <button onclick="addSticker('ruby.png')">💎</button>
+    <button onclick="addSticker('youtuber.png')">🖥️</button>
+    <button onclick="addSticker('ruby_(2).png')">=🔻</button>
+    <button onclick="addSticker('browser.png')">💻</button>
+
+    <button onclick="downloadImage()">📷 Guardar imagen</button>
+    
+  </div>
+
+  <div id="canvas-container">
+    <div id="canvas">
+      <img id="base-image" src="laptop.png" alt="computadora base" draggable="false" />
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</body>
+</html>
